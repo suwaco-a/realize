@@ -1,19 +1,37 @@
 .footer{
 	box-sizing: border-box;
-	border-top: 1px solid $color-light;
-	@include max-screen($width-m){
-		margin-top: $bm;
+  background-color: $color-dark;
+  &__row{
+    @include wrap;
+    display: flex;
+    justify-content: space-between;
+    padding-top: $bm-inner;
+    padding-bottom: $bm-inner;
+    @include max-screen($width-m){
+      display: block;
+    }
+    @include max-screen($width-s){
+      padding-top: $bm-inner;
+      padding-bottom: $bm-inner;
+    }
 	}
-	&__row{
+  &__flink{
+    @include max-screen($width-m){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: $bm-inner;
+    }
 
-	}
+  }
+
 	&__nav{
-
+    max-width: 700px;
+    @include max-screen($width-m){
+      max-width: 100%;
+    }
 	}
 	&__add{
-		box-sizing: border-box;
-		font-size: 1.2rem;
-		text-align: center;
-		padding: $bm;
+
 	}
 }
