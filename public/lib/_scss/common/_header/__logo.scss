@@ -23,7 +23,9 @@
     left: -$shoulder-length/2;
     top: -$shoulder-length/2;
     @include max-screen($width-s){
-      left: -$shoulder-length*.65;
+      transform: rotate(35deg);
+      left: -$shoulder-length*.6;
+      border: none;
     }
   }
   &__item{

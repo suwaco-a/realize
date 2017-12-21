@@ -12,7 +12,7 @@
 
   }
   &__bg{
-    box-sizing: content-box;
+    box-sizing: border-box;
     position: absolute;
     top:0;
     right: 0;
@@ -20,8 +20,9 @@
     left: 0;
     z-index: 2;
     @include max-screen($width-s){
-      background-color: rgba(255,255,255,.7);
+      background-color: rgba(180,219,0,.9);
       box-shadow: 0 0px 5px rgba(0,0,0,.25);
+      //border-bottom: 1px solid $color-light;
     }
   }
   &__logo{
@@ -40,7 +41,31 @@
       right: $bm-inner;
     }
   }
+  &__lang{
+    position: absolute;
+    top:0;
+    right: $header-height__sp;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $header-height__sp;
+    @include min-screen($width-s + 1px){
+      display: none;
+    }
+  }
   &__menubar{
-
+    position: absolute;
+  	top:0;
+  	right: 0;
+  	z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $header-height__sp;
+    width: $header-height__sp;
+    @include min-screen($width-s + 1px){
+      display: none;
+    }
   }
 }

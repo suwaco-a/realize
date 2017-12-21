@@ -1,14 +1,14 @@
 <nav class="shoulder-nav">
   <div class="shoulder-nav__bg"></div>
   <div class="shoulder-nav__row">
-    <p class="shoulder-nav__label">LANGUAGE</p>
-    <nav class="shoulder-nav__lang snav-lang">
-      <ul class="snav-lang__row">
-        <li class="snav-lang__item">
-          <a href="" class="snav-lang__link jp">JP</a>
+    <nav class="shoulder-nav__lang lang-nav">
+      <p class="lang-nav__label">LANGUAGE</p>
+      <ul class="lang-nav__row">
+        <li class="lang-nav__item">
+          <a href="" class="lang-nav__link jp">JP</a>
         </li>
-        <li class="snav-lang__item">
-          <a href="" class="snav-lang__link en">EN</a>
+        <li class="lang-nav__item">
+          <a href="" class="lang-nav__link en">EN</a>
         </li>
       </ul>
     </nav>

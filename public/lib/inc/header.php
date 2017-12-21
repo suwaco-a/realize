@@ -21,6 +21,16 @@
         </li>
       </ul>
     </nav>
+    <nav class="header__lang lang-nav">
+      <ul class="lang-nav__row">
+        <li class="lang-nav__item">
+          <a href="" class="lang-nav__link jp">JP</a>
+        </li>
+        <li class="lang-nav__item">
+          <a href="" class="lang-nav__link en">EN</a>
+        </li>
+      </ul>
+    </nav>
     <label class="header__menubar menubar">
       <div class="menubar__row">
         <span class="menubar__item"></span>
