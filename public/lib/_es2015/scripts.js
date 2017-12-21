@@ -120,9 +120,11 @@ if($('body._mutation-observer').length){
 
 import menubarFn from './common/_header/__menubar.js';
 menubarFn();
+import sholderMenubarFn from './common/_sholder/__menubar.js';
+sholderMenubarFn();
 
-import gnavDeepFn from './common/_header/__gnav-deep.js';
-gnavDeepFn();
+//import gnavDeepFn from './common/_header/__gnav-deep.js';
+//gnavDeepFn();
 
 //タッチホバーイベント
 import touchevents_config from './common/_unit/_touch-events/__config.js';

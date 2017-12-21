@@ -20,7 +20,7 @@
 @import "common/_header/__menubar.scss";
 @include min-screen($width-s + 1px){
   @import "common/_header/__gnav_pc.scss";
-  @import "common/_header/__gnav-deep_pc.scss";
+  //@import "common/_header/__gnav-deep_pc.scss";
 }
 @include max-screen($width-s){
   @import "common/_header/__gnav_sp.scss";

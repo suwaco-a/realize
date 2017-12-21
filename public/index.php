@@ -6,6 +6,7 @@ $metaDesc = $siteDescription;
 $body_class ="home";
 include($inc_path."/lib/inc/head.php");
 include($inc_path."/lib/inc/header.php");
+include($inc_path."/lib/inc/shoulder-nav.php");
 include($inc_path."/lib/inc/main-head.php");
 ?>
 

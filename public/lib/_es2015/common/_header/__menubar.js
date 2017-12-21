@@ -3,9 +3,11 @@ export default function () {
   const body = document.querySelector('body');
   const gnav = document.querySelector('.gnav');
   const menubar = document.querySelector('.menubar');
+  const smenu = document.querySelector('.smenu');
 
   menubar.addEventListener("pointerdown", function(ev) {
     menubar.classList.toggle('js-active');
+    smenu.classList.toggle('js-active');
     gnav.classList.toggle('js-active');
     gnavSlide_in(gnav);
   });
@@ -21,7 +23,7 @@ export default function () {
       easing: 'ease'
     });
     const nav = el.children[0].animate([
-      {opacity: 0,transform:'translate3D(50%,0,0)'},
+      {opacity: 0,transform:'translate3D(0,-100px,0)'},
       {opacity: 1,transform:'translate3D(0,0,0)'}
     ], {
       direction: 'alternate',
