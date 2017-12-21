@@ -26,7 +26,12 @@
   @import "common/_header/__gnav_sp.scss";
 }
 
+//ショルダーナビ
 @import "common/_shoulder-nav/__layout.scss";
+@import "common/_shoulder-nav/__smenu-bar.scss";
+@import "common/_shoulder-nav/__smenu.scss";
+@import "common/_shoulder-nav/__snav-lang.scss";
+
 
 //メインエリア
 @import "common/_main/__main.scss";
