@@ -1,8 +1,9 @@
 <header class="header">
   <div class="header__row">
     <div class="header__bg"></div>
-    <h1 class="header__logo">
-      <a href="<?php echo $base_url; ?>/"><?php echo $metaTtl; ?></a>
+    <h1 class="header__logo header-logo">
+      <div class="header-logo__bg"></div>
+      <a href="<?php echo $base_url; ?>/" class="header-logo__item"><?php echo $metaTtl; ?></a>
     </h1>
     <nav class="header__gnav gnav">
       <ul class="gnav__row"　data-scroll-scope>

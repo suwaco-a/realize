@@ -16,6 +16,7 @@
 
 //common
 @import "common/_header/__layout.scss";
+@import "common/_header/__logo.scss";
 @import "common/_header/__menubar.scss";
 @include min-screen($width-s + 1px){
   @import "common/_header/__gnav_pc.scss";

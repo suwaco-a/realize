@@ -216,18 +216,11 @@ html, body {
   z-index: 999;
   top: 0;
   right: 0;
-  left: 0; }
-  .header__row {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    max-width: 1360px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 24px;
-    border-top: 4px solid transparent; }
-    @media screen and (max-width: 666px) {
-      .header__row {
-        padding: 0 16px; } }
+  left: 0;
+  height: 92px; }
+  @media screen and (max-width: 666px) {
+    .header {
+      height: 60px; } }
   .header__bg {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -236,60 +229,76 @@ html, body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #fff;
-    border-top: 4px solid #A2324E;
-    -webkit-box-shadow: 0 0px 24px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 0px 24px rgba(0, 0, 0, 0.25);
-    height: 48px;
     z-index: 2; }
     @media screen and (max-width: 666px) {
       .header__bg {
+        background-color: rgba(255, 255, 255, 0.7);
         -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.25);
         box-shadow: 0 0px 5px rgba(0, 0, 0, 0.25); } }
   .header__logo {
     position: relative;
-    z-index: 2;
-    float: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    height: 48px; }
-    .header__logo a {
-      display: block;
-      overflow: hidden;
-      width: 142px;
-      height: 0;
-      padding-top: 26px;
-      background-image: url("../img/common/header/logo.png");
-      background-size: 142px 26px; }
-      @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-        .header__logo a {
-          background-image: url("../img/common/header/logo@2x.png"); } }
-    .header__logo img {
-      max-width: 100%;
-      width: 100%;
-      height: auto; }
+    z-index: 3; }
   .header__gnav {
-    position: relative;
-    z-index: 3;
-    float: right; }
-    @media screen and (max-width: 666px) {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+    @media screen and (max-width: 970px) {
       .header__gnav {
-        margin-top: 4px;
-        z-index: 1; } }
-  .header__menubar {
-    margin-top: 4px; }
+        left: auto;
+        right: 24px; } }
+
+.header-logo {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 281px;
+  height: 92px;
+  padding-top: 30px;
+  padding-left: 30px; }
+  @media screen and (max-width: 666px) {
+    .header-logo {
+      height: 60px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding-top: 0;
+      padding-left: 16px; } }
+  .header-logo__bg {
+    position: absolute;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 1px solid #eee;
+    height: 396px;
+    width: 396px;
+    left: -198px;
+    top: -198px; }
+    @media screen and (max-width: 666px) {
+      .header-logo__bg {
+        left: -257.4px; } }
+  .header-logo__item {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    width: 129px;
+    height: 0;
+    padding-top: 32px;
+    background-image: url("../img/common/header/logo.png");
+    background-size: 129px 32px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .header-logo__item {
+        background-image: url("../img/common/header/logo@2x.png"); } }
 
 .menubar {
   display: none;
-  height: 48px;
-  width: 48px;
+  height: 60px;
+  width: 60px;
   position: absolute;
   top: 0;
   right: 0;
@@ -438,12 +447,7 @@ html, body {
 
 @media screen and (min-width: 667px) {
   .gnav__row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .gnav__link {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    height: 92px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -452,30 +456,33 @@ html, body {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    height: 48px;
-    padding: 0 8px;
-    text-decoration: none; }
+    justify-content: center; }
+  .gnav__item {
+    margin: 0 20px; }
+  .gnav__link {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #4a4d50; }
     .no-js .gnav__link:hover,
     .no-touchevents .gnav__link:hover,
     .touchevents .gnav__link.touch {
       -webkit-transition: all .3s;
       transition: all .3s;
-      background-color: #a1cf00;
-      color: #fff; }
-    body.home .gnav__link.home {
       color: #a1cf00; }
-    body.contact .gnav__link.contact {
+    body.company .gnav__link.company {
       color: #a1cf00; }
-    body._sample .gnav__link._sample {
+    body.news .gnav__link.news {
       color: #a1cf00; }
-    body._layout .gnav__link._layout {
+    body.recruit .gnav__link.recruit {
       color: #a1cf00; }
-    body._styleguide .gnav__link._styleguide {
+    body.access .gnav__link.access {
       color: #a1cf00; }
-    .gnav__link_contact {
-      background-color: #A2324E;
-      color: #eee; }
     .gnav-deep .gnav__link::after {
       content: "";
       display: inline-block;
@@ -485,6 +492,10 @@ html, body {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       margin-left: 4px; }
+  .gnav__jp {
+    display: block;
+    margin-top: 8px;
+    font-size: 1.2rem; }
   .gnav-deep {
     position: relative; }
     .gnav-deep .gnav__link.js-active {
@@ -571,7 +582,7 @@ html, body {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       height: 100vh;
-      padding-top: 48px;
+      padding-top: 60px;
       padding-bottom: 80px;
       -webkit-overflow-scrolling: touch;
       background-color: #fff;
@@ -618,7 +629,7 @@ html, body {
       margin-right: 8px; } }
 
 .main {
-  padding-top: 48px;
+  padding-top: 92px;
   margin-bottom: 48px; }
   .main__row {
     -webkit-box-sizing: border-box;

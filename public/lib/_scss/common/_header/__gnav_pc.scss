@@ -1,40 +1,45 @@
 .gnav{
-  &__row{
-    display: flex;
-  }
-  &__item{
 
-  }
-  &__link{
-    $link:&;
-    box-sizing: border-box;
+  &__row{
+    height: $header-height;
     display: flex;
     align-items: center;
     justify-content: center;
-    height:  $header-height;
-    padding: 0 $bm;
+  }
+  &__item{
+    margin: 0 $bm*2.5;
+
+  }
+  &__link{
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
     text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1;
+    color:$color-dark-lighten;
     @include touch-hover(){
       transition: all .3s;
-      background-color: $color-brand;
-      color: #fff;
+      color:$color-brand;
     }
-    @each $class in home,contact,_sample,_layout,_styleguide {
+    @each $class in company,news,recruit,access, {
       &.#{$class}{
         body.#{$class} & {
           color:$color-brand;
         }
       }
     }//each
-    &_contact{
-      background-color: $color-point;
-      color:$color-light;
-    }
     .gnav-deep & {
       &::after{
         @include icon-font('\f103');
         margin-left: $bm/2;
       }
     }
-  }//link
+  }
+  &__jp{
+    display: block;
+    margin-top: $bm;
+    font-size: 1.2rem;
+  }
 }
