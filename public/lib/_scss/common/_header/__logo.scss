@@ -13,17 +13,17 @@
     padding-left: $bm*2;
   }
   &__bg{
+    box-sizing: border-box;
     position: absolute;
     background-color: #fff;
     transform: rotate(45deg);
     border: 1px solid $color-light;
-    $long:396px;
-    height: $long;
-    width: $long;
-    left: -$long/2;
-    top: -$long/2;
+    height: $shoulder-length;
+    width: $shoulder-length;
+    left: -$shoulder-length/2;
+    top: -$shoulder-length/2;
     @include max-screen($width-s){
-      left: -$long*.65;
+      left: -$shoulder-length*.65;
     }
   }
   &__item{
