@@ -1,7 +1,7 @@
 <?php
 
 #1) [ $base_url ]を、ディレクトリ構成に合わせて修正してください
-$base_url = ("");
+$base_url = str_replace($_SERVER['DOCUMENT_ROOT'], '', dirname(__FILE__));
 
 #2) 開発環境に合わせて、エラーハンドリングしてください
 ini_set('display_errors', 1);
