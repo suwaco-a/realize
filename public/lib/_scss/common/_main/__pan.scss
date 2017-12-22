@@ -1,29 +1,32 @@
 .pan{
-  max-width: 100%;
-  flex: 0 0 100%;
+  @include wrap;
 	&__row{
+    box-sizing: border-box;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
+    padding:$bm 25px $bm 0;
 	}
 	&__item{
+    $this:&;
 		display: flex;
 		align-items: center;
-		$this:&;
-		margin-right: $bm/2;
-		&::after{
+		margin-right: $bm;
+		&::before{
 			@include icon-font();
-			margin-left: $bm/2;
+			margin-right: $bm;
+      position: relative;
+      top:-1px;
 		}
 		a{
-			height: 30px;
+			height: 20px;
 			display: flex;
 			align-items: center;
-			justify-content: center;
 			text-decoration: none;
 			font-size: 1.2rem;
+      color:$color-dark;
 			@include touch-hover(){
-				text-decoration: underline;
+				color:$color-brand;
 			}
 		}
 		&_home{
@@ -36,12 +39,12 @@
 					@include icon-font('\f015');
 				}
 			}
+      &::before{
+        display: none;
+      }
 		}
 		&_thispage{
 			@extend #{$this};
-			&::after{
-				display: none;
-			}
 		}
 	}//item
 

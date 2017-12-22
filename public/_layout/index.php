@@ -8,7 +8,6 @@ include($inc_path."/lib/inc/head.php");
 include($inc_path."/lib/inc/header.php");
 include($inc_path."/lib/inc/shoulder-nav.php");
 include($inc_path."/lib/inc/main-head.php");
-#include($inc_path."/lib/inc/pan.php");
 ?>
 
 <header class="main__header main-header">
@@ -26,6 +25,9 @@ include($inc_path."/lib/inc/main-head.php");
 
 <?php
 include($inc_path."/lib/inc/main-foot.php");
+$panAry[] = array("/dummyURL1" ,"dammy1");
+$panAry[] = array("/dummyURL1" ,"dammy2");
+include($inc_path."/lib/inc/pan.php");
 include($inc_path."/lib/inc/pagetop.php");
 include($inc_path."/lib/inc/footer.php");
 include($inc_path."/lib/inc/foot.php");

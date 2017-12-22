@@ -885,11 +885,18 @@ html, body {
   margin-bottom: .5em; }
 
 .pan {
-  max-width: 100%;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%; }
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px; }
+  @media screen and (max-width: 666px) {
+    .pan {
+      padding: 0 16px; } }
   .pan__row {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -897,7 +904,8 @@ html, body {
     flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    padding: 8px 25px 8px 0; }
   .pan__item, .pan__item_home, .pan__item_thispage {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -905,8 +913,8 @@ html, body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-right: 4px; }
-    .pan__item::after, .pan__item_home::after, .pan__item_thispage::after {
+    margin-right: 8px; }
+    .pan__item::before, .pan__item_home::before, .pan__item_thispage::before {
       content: "";
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
@@ -914,20 +922,20 @@ html, body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      margin-left: 4px; }
+      margin-right: 8px;
+      position: relative;
+      top: -1px; }
     .pan__item a, .pan__item_home a, .pan__item_thispage a {
-      height: 30px;
+      height: 20px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
       text-decoration: none;
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      color: #313335; }
       .no-js .pan__item a:hover, .no-js .pan__item_home a:hover, .no-js .pan__item_thispage a:hover,
       .no-touchevents .pan__item a:hover,
       .no-touchevents .pan__item_home a:hover,
@@ -935,7 +943,7 @@ html, body {
       .touchevents .pan__item a.touch,
       .touchevents .pan__item_home a.touch,
       .touchevents .pan__item_thispage a.touch {
-        text-decoration: underline; }
+        color: #a1cf00; }
     .pan__item_home a span {
       display: none; }
     .pan__item_home a::before {
@@ -946,7 +954,7 @@ html, body {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
-    .pan__item_thispage::after {
+    .pan__item_home::before {
       display: none; }
 
 .conts__item {
