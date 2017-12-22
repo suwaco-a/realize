@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html class="no-js">
 <head>
-  <?php include ($inc_path."/lib/inc/head_gtm.txt"); ?>
+  <?php include ($inc_path."/lib/inc/head_gtm.php"); ?>
 
   <!-- base -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-language" content="ja">
   <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+  <meta name="format-detection" content="telephone=no">
 
   <!-- title/description -->
   <title><?php echo $metaTtl; ?></title>
@@ -28,7 +29,7 @@
   <meta property="og:site_name"  content="<?php echo $siteName; ?>" >
   <meta property="og:description" content="<?php echo $metaDesc; ?>" >
   <meta property="og:image" content="<?php echo $img_url; ?>/thum/home@2x.png" >
-  <meta property="article:publisher" content="FacebookページのURL" >
+  <!--meta property="article:publisher" content="FacebookページのURL" -->
   <!--meta property="fb:app_id" content="App ID" -->
 
   <!-- OGP Twitter用 -->
@@ -41,6 +42,6 @@
 
 </head>
 <body class="<?php echo $body_class." ".$mydir." ".$filename; ?>">
-  <?php include ($inc_path."/lib/inc/body_gtm.txt"); ?>
+  <?php include ($inc_path."/lib/inc/body_gtm.php"); ?>
   <?php include ($inc_path."/lib/inc/ie10.php"); ?>
   <div id="all">

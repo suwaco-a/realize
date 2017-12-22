@@ -1,0 +1,35 @@
+.header-logo{
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 281px;
+  height: $header-height;
+  padding-top: 30px;
+  padding-left: 30px;
+  @include max-screen($width-s){
+    height: $header-height__sp;
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    padding-left: $bm*2;
+  }
+  &__bg{
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #fff;
+    transform: rotate(45deg);
+    border: 1px solid $color-light;
+    height: $shoulder-length;
+    width: $shoulder-length;
+    left: -$shoulder-length/2;
+    top: -$shoulder-length/2;
+    @include max-screen($width-s){
+      transform: rotate(35deg);
+      left: -$shoulder-length*.6;
+      border: none;
+    }
+  }
+  &__item{
+    position: absolute;
+    @include bg-img(common/header/logo,png);
+  }
+}

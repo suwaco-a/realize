@@ -120,17 +120,19 @@ if($('body._mutation-observer').length){
 
 import menubarFn from './common/_header/__menubar.js';
 menubarFn();
+import sholderMenubarFn from './common/_sholder/__menubar.js';
+sholderMenubarFn();
 
-import gnavDeepFn from './common/_header/__gnav-deep.js';
-gnavDeepFn();
+//import gnavDeepFn from './common/_header/__gnav-deep.js';
+//gnavDeepFn();
 
 //タッチホバーイベント
 import touchevents_config from './common/_unit/_touch-events/__config.js';
 touchevents_config();
 
 //ページトップへボタンのフェード
-import pagetop_config from './common/_unit/_pagetop/__config.js';
-pagetop_config();
+//import pagetop_config from './common/_unit/_pagetop/__config.js';
+//pagetop_config();
 
 //別ページでのポップアップ
 import popwin_config from './common/_unit/_popup-window/__config.js';

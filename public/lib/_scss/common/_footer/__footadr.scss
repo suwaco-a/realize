@@ -2,9 +2,9 @@
 ---
 name: footadr
 category:
-  - common/footer/footadr
+- common/footer/footadr
 tag:
-  - base
+- base
 compile: false
 ---
 
@@ -12,21 +12,25 @@ compile: false
 
 ```html
 <address class="footer__add footadr">
-  <div class="footadr__copyright"><span class="footadr__mark">&copy;</span> amiten Inc. All Rights Reserved.</div>
+<div class="footadr__copyright"><span class="footadr__mark">&copy;</span> amiten Inc. All Rights Reserved.</div>
 </address>
 ```
 */
 
 .footadr{
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: $bm-inner $bm;
+  text-align: center;
   &__copyright{
     font-style: normal;
-    font-size: 1.4rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   &__mark{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin-right: $bm/2;
     position: relative;
     top:1px;

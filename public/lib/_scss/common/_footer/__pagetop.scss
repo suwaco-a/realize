@@ -1,0 +1,52 @@
+.pagetop{
+  position: relative;
+  z-index: 2;
+  @include wrap;
+  &__row{
+    position: absolute;
+    right: $bm;
+    top:-25px;
+    display: inline-block;
+    @include touch-hover(){
+      .pagetop__item{
+        background-color: #fff;
+        color:$color-brand;
+        transition: all .5s;
+        animation: frame .5s ;
+      }
+    }
+
+  }
+  &__item{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: $color-brand;
+    border: 2px solid $color-brand;
+    border-radius: 25px;
+    text-decoration: none;
+    color:#fff;
+    text-align: center;
+    transition: all .5s;
+  }
+  &__label{
+    font-size: .9rem;
+    line-height: 1;
+    &::before{
+      @include icon-font('\f106');
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      height: 20px;
+    }
+  }
+  @keyframes frame {
+    0% { transform: scaleX(1); }
+    50%{ transform: scaleX(0);}
+    100% {  transform: scaleX(1);}
+  }
+}

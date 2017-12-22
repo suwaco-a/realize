@@ -4,13 +4,15 @@
 //--------------------- web fonts ---------------------//
 //@import "__font-family/_noto-sans.scss";
 @import "__font-family/_baskerville.scss";
+@import "__font-family/_roboto.scss";
 @import "__font-family/_font-awesome/_font-awesome.scss";
+
 
 //--------------------- font-family mixin ---------------------//
 
 // ゴシック体
 @mixin gothic {
-	font-family: Linotte, YuGothic, 'Yu Gothic', 游ゴシック体, 游ゴシック, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Roboto, メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Osaka, 'MS PGothic', Arial, Helvetica, Verdana, sans-serif;
+	font-family: 'Roboto',Linotte, YuGothic, 'Yu Gothic', 游ゴシック体, 游ゴシック, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Roboto, メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Osaka, 'MS PGothic', Arial, Helvetica, Verdana, sans-serif;
 }
 
 // 明朝体 - コンテンツ用

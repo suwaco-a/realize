@@ -1,0 +1,17 @@
+
+.smenu{
+  display: inline-block;
+  &__label{
+    color:#fff;
+    font-size: 1rem;
+    line-height: 1;
+    margin-bottom: $bm;
+  }
+  &__row{
+
+  }
+
+  &__bar{
+
+  }
+}

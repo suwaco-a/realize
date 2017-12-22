@@ -1,0 +1,41 @@
+.shoulder-nav{
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: $header-height;
+  z-index: 1000;
+  overflow: hidden;
+  width: 190px;
+  height: (280px - $header-height);
+  //padding-top: $header-height;
+  overflow: hidden;
+  @include max-screen($width-s){
+    display: none;
+  }
+  &__bg{
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(45deg);
+    background-color: $color-brand;
+    height: $shoulder-length;
+    width: $shoulder-length;
+    left: -$shoulder-length/2;
+    top: -$shoulder-length/2 - $header-height;
+  }
+  &__row{
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-top: $bm*2;
+  }
+  &__lang{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 10px;
+  }
+  &__menu{
+    position: relative;
+    z-index: 2;
+  }
+}
+

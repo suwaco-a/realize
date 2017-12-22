@@ -16,14 +16,22 @@
 
 //common
 @import "common/_header/__layout.scss";
+@import "common/_header/__logo.scss";
 @import "common/_header/__menubar.scss";
 @include min-screen($width-s + 1px){
   @import "common/_header/__gnav_pc.scss";
-  @import "common/_header/__gnav-deep_pc.scss";
+  //@import "common/_header/__gnav-deep_pc.scss";
 }
 @include max-screen($width-s){
   @import "common/_header/__gnav_sp.scss";
 }
+
+//ショルダーナビ
+@import "common/_shoulder-nav/__layout.scss";
+@import "common/_shoulder-nav/__smenu-bar.scss";
+@import "common/_shoulder-nav/__smenu.scss";
+@import "common/_shoulder-nav/__snav-lang.scss";
+
 
 //メインエリア
 @import "common/_main/__main.scss";
@@ -38,7 +46,9 @@
 @import "common/_side/__index.scss";
 
 //フッター
+@import "common/_footer/__pagetop.scss";
 @import "common/_footer/__layout.scss";
+@import "common/_footer/__flink.scss";
 @import "common/_footer/__fnav.scss";
 @import "common/_footer/__footadr.scss";
 
