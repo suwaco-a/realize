@@ -49,6 +49,8 @@
   }
 }
 
+//active時の表示
+
 .js-active{
   &.gnav{
     $this:'.gnav';
@@ -57,7 +59,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: $color-brand;
+    background-color: rgba(180,219,0,.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,6 +71,11 @@
       align-items: stretch;
       justify-content: space-between;
       flex-wrap: wrap;
+      transition: all .5s;
+      @include max-screen($width-m){
+        transition: all .5s;
+        width: 70%;
+      }
     }
     #{$this}__item{
       box-sizing: border-box;

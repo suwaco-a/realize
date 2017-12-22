@@ -3,7 +3,7 @@ $pageTtl = "SHOW CASE";
 include ("../function.php");
 $metaTtl = $pageTtl."-".$siteName;
 $metaDesc = $siteDescription;
-$body_class ="l-page-single";
+$body_class ="l-page-column";
 include($inc_path."/lib/inc/head.php");
 include($inc_path."/lib/inc/header.php");
 include($inc_path."/lib/inc/shoulder-nav.php");
@@ -18,10 +18,14 @@ include($inc_path."/lib/inc/main-head.php");
   </div>
 </header>
 
-<div class="main__conts conts">
+<div class="main__conts">
   <section class="conts__item">
     <?php  include ($inc_path."/_layout/sample-article.php"); ?>
   </section>
+</div>
+
+<div class="main__side side">
+  <?php  include ($inc_path."/_layout/sample-side.php"); ?>
 </div>
 
 <?php
