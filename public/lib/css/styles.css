@@ -2688,24 +2688,6 @@ compile: false
     .l-wrap {
       padding: 0 16px; } }
 
-body.home .main {
-  padding-top: 0;
-  margin-bottom: 0;
-  background-color: #000;
-  height: 100%;
-  width: 100%; }
-  @media screen and (max-width: 666px) {
-    body.home .main {
-      padding-top: 0; } }
-  body.home .main__row {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    max-width: 100%;
-    margin: 0;
-    padding: 0; }
-  body.home .main p {
-    margin: .5em 0; }
-
 body.home .home-conts__item {
   position: relative;
   width: 100%;
