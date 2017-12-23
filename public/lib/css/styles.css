@@ -2731,15 +2731,15 @@ body.home .home-conts__inner {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  color: #fff; }
-  body.home .home-conts__inner.realizing {
-    z-index: 4; }
-  body.home .home-conts__inner.mixed {
-    z-index: 3; }
-  body.home .home-conts__inner.mobility {
-    z-index: 2; }
-  body.home .home-conts__inner.sensing {
-    z-index: 1; }
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
+body.home .home-conts__item.js-inview .home-conts__inner {
+  opacity: 1;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
 
 body.home .home-conts__bg {
   position: absolute;

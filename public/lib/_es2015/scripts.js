@@ -92,7 +92,7 @@ if($('body._drawer').length){
 import * as interSO_config from './base/_intersection-observer/__config.js';
 if($('body._intersection-observer').length){
   interSO_config.base();
-	interSO_config.sample();
+  interSO_config.sample();
 };
 
 import * as webAnimations_config from './base/_web-animations/__config.js';
@@ -102,9 +102,9 @@ if($('body._web-animations').length){
   webAnimations_config.caniuse_polyfill();
   webAnimations_config.sample1();
   animations_config.sampleX();
-	animations_config.sampleY();
-	animations_config.sampleXY();
-	animations_config.sampleR();
+  animations_config.sampleY();
+  animations_config.sampleXY();
+  animations_config.sampleR();
   animations_config.sampleTest()
 };
 
@@ -143,8 +143,11 @@ popwin_config();
 //--------------------- page ---------------------//
 
 //home
-import mainV_config from './page/_home/__main-v.js';
-import './page/_home/__main-v.scss';
+import homeConts_config from './page/_home/__home-conts.js';
+if($('body.home').length){
+  homeConts_config();
+  console.log('test');
+}
 
 if($('body._etc').length){
   mainV_config();
@@ -153,5 +156,5 @@ if($('body._etc').length){
 //PointerEventsのサンプル
 import pointerEvents_config from './page/_pointer-events/__config.js';
 if($('body._pointer-events').length){
-pointerEvents_config();
+  pointerEvents_config();
 };

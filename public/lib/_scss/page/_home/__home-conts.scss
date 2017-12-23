@@ -16,18 +16,12 @@
     justify-content: center;
     flex-direction: column;
     color:#fff;
-    &.realizing{
-      z-index: 4;
-    }
-    &.mixed{
-      z-index: 3;
-    }
-    &.mobility{
-      z-index: 2;
-    }
-    &.sensing{
-      z-index: 1;
-    }
+    opacity: 0;
+    transition: all .3s;
+  }
+  &__item.js-inview .home-conts__inner{
+    opacity: 1;
+    transition: all .3s;
   }
   &__bg{
     position: absolute;
