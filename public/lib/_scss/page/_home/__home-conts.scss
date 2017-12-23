@@ -25,13 +25,26 @@
     }
   }
   &__head{
-    background-color: red;
+
   }
   &__ttl{
+    font-size: 7rem;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 25px;
+    line-height: 1.2;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: $bm-outer;
   }
   &__sub{
     text-align: center;
+    font-size: 2.4rem;
+    font-feature-settings: 'palt';
+    margin-bottom: 0;
+  }
+  &__ex{
+    padding-top: $bm-outer*2;
   }
   &__next{
 

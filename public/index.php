@@ -15,7 +15,7 @@ include($inc_path."/lib/inc/main-head.php");
   <section class="home-conts__item realizing" id="realizing">
 
     <header class="home-conts__head">
-      <h2 class="home-conts__ttl">Realizing<br>people's dreams</h2>
+      <h2 class="home-conts__ttl">REALIZING<br>PEOPLE'S DREAMS</h2>
       <p class="home-conts__sub">先端技術を付加価値に変え、イノベイティブな事業開発を支援する</p>
     </header>
 
@@ -36,7 +36,7 @@ include($inc_path."/lib/inc/main-head.php");
   <section class="home-conts__item mixed" id="mixed">
 
     <header class="home-conts__head">
-      <h2 class="home-conts__ttl">Mixed Realitys</h2>
+      <h2 class="home-conts__ttl">MIXED REALITYS</h2>
       <p class="home-conts__sub">VR（仮想現実）AR（拡張現実）MR（複合現実）のスペシャリスト</p>
     </header>
 
