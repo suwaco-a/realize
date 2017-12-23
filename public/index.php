@@ -10,27 +10,55 @@ include($inc_path."/lib/inc/shoulder-nav.php");
 include($inc_path."/lib/inc/main-head.php");
 ?>
 
-<div class="main__conts conts">
+<div class="main__conts home-conts conts">
 
-  <section class="conts__item">
-    <h2 class="u-ttl_l">本サイトは・・・</h2>
-    <p>AmiTemplate-PHPのサンプルです。</p>
-    <p>普段使っている中規模サイト制作用の雛形。LAMP環境構築から、gulp、scss、webpackを使ったes2015(JavaScript)の管理などなど…。ベストとは言えないけどベターなプラクティスをもとめて随時更新。</p>
+  <section class="home-conts__item realizing">
+    Realizing  people's dreams
+    先端技術を付加価値に変え、イノベイティブな事業開発を支援する
 
-    <h3 class="u-ttl_m">情報</h3>
-    <ul class="u-list__ul">
-      <li><a href="https://github.com/amishiro/AmiTemplate-PHP" target="_blank" class="u-icon__link">GitHub</a></li>
-      <li><a href="https://github.com/amishiro/AmiTemplate-PHP/releases" target="_blank" class="u-icon__link">リリース情報</a></li>
-    </ul>
 
-    <h3 class="u-ttl_m">各種レイアウト</h3>
-    <p><a href="<?php echo $base_url; ?>/_layout/" class="u-icon__link">こちら</a></p>
 
-    <h3 class="u-ttl_m">各種サンプル</h3>
-    <p><a href="<?php echo $base_url; ?>/_sample/" class="u-icon__link">こちら</a></p>
+    NEXT
 
-    <h3 class="u-ttl_m">スタイルガイド</h3>
-    <p><a href="<?php echo $base_url; ?>/_styleguide/" target="_blank" class="u-icon__link">こちら</a></p>
+    Mixed Reality
+    VR（仮想現実）AR（拡張現実）MR（複合現実）のスペシャリスト
+
+  </section>
+  <section class="home-conts__item mixed">
+
+    Mixed Reality
+    VR（仮想現実）AR（拡張現実）MR（複合現実）のスペシャリスト
+
+    3D/ホログラム技術によりこれまでには実現できなかったイノベーションを
+
+
+
+    NEXT
+    SMART MOBILITY   MANAGEMENT
+    社会を前進させる技術
+  </section>
+  <section class="home-conts__item mobility">
+    SMART MOBILITY   MANAGEMENT
+    社会を前進させる技術
+
+    シェアリングエコノミーから物流課題までICTでモビリティの未来を創る
+
+
+    NEXT
+
+    SENSING/AI
+    データの意味を見出し新たな価値を創る
+
+  </section>
+  <section class="conts__item sensing">
+    SENSING/AI
+    データの意味を見出し新たな価値を創る
+
+    すぐに実現可能なAIによる行動分析/予測
+
+
+    会社ロゴ
+
 
   </section>
 </div>
