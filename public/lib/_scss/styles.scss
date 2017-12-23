@@ -79,6 +79,11 @@
 //レイアウトコンポーネント
 @import "common/_layout/__full.scss";
 @import "common/_layout/__column.scss";
+@import "common/_layout/__wrap.scss";
 
 //ページ個別
-@import "page/_home/__main-v.scss";
+body.home{
+  @import "page/_home/__main.scss";
+  @import "page/_home/__home-conts.scss";
+  @import "page/_home/__next.scss";
+}

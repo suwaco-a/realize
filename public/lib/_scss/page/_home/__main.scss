@@ -1,0 +1,27 @@
+.main{
+  padding-top: 0;
+  margin-bottom: 0;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  @include max-screen($width-s){
+    padding-top: 0;
+  }
+  &__row{
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  //↓content
+  &__conts{
+  }
+  //↓side
+  &__side{
+
+  }
+  //↓content tag
+  p{
+    margin: .5em 0;
+  }
+}
