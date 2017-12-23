@@ -1,11 +1,16 @@
 .home-conts{
   &__item{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  &__inner{
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100vh;
-    background-color: $color-dark;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,8 +29,37 @@
       z-index: 1;
     }
   }
+  &__bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  &__video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+  }
+  &__dot{
+    position: absolute;
+		z-index: 1;
+		top:0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: url("../img/home/bg__dot.svg");
+		background-size: 3px 3px;
+		background-color: rgba(0,0,0,.2);
+  }
   &__head{
-
+    position: relative;
+    z-index: 2;
   }
   &__ttl{
     font-size: 7rem;
@@ -44,9 +78,14 @@
     margin-bottom: 0;
   }
   &__ex{
+    position: relative;
+    z-index: 2;
     padding-top: $bm-outer*2;
   }
   &__next{
-
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
   }
 }

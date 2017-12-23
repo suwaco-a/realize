@@ -24,7 +24,9 @@
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1;
-    color:$color-dark-lighten;
+    //color:$color-dark-lighten;
+    color:#fff;
+    //text-shadow:0px 0px 4px rgba(0,0,0,.5);
     @include touch-hover(){
       transition: all .3s;
       color:$color-brand;
