@@ -24,12 +24,16 @@
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1;
-    //color:$color-dark-lighten;
-    color:#fff;
+    color:$color-dark-lighten;
+    //color:#fff;
     //text-shadow:0px 0px 4px rgba(0,0,0,.5);
+    transition: all .5s;
     @include touch-hover(){
       transition: all .3s;
       color:$color-brand;
+    }
+    &.js-inview{
+      color:#fff;
     }
     @each $class in company,news,recruit,access, {
       &.#{$class}{

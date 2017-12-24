@@ -1,6 +1,9 @@
 .main{
+  position: relative;
+  z-index: 3;
   padding-top: $header-height;
-  margin-bottom: $bm-outer;
+  padding-bottom: $bm-outer;
+  background-color: #fff;
   @include max-screen($width-s){
     padding-top: $header-height__sp;
   }

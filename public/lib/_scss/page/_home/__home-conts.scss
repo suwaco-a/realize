@@ -1,8 +1,16 @@
 .home-conts{
+  background-color: $color-dark;
   &__item{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
+    z-index: 1;
+    opacity: 0;
+    transition: all .5s;
+    &.js-inview{
+      opacity: 1;
+      transition: all .5s;
+    }
   }
   &__inner{
     position: fixed;
@@ -16,12 +24,6 @@
     justify-content: center;
     flex-direction: column;
     color:#fff;
-    opacity: 0;
-    transition: all .3s;
-  }
-  &__item.js-inview .home-conts__inner{
-    opacity: 1;
-    transition: all .3s;
   }
   &__bg{
     position: absolute;
@@ -64,17 +66,35 @@
     text-align: center;
     margin-top: 0;
     margin-bottom: $bm-outer;
+    @include max-screen($width-s){
+      font-size: 3rem;
+      letter-spacing: 3px;
+      margin-bottom: $bm-inner;
+    }
   }
   &__sub{
     text-align: center;
     font-size: 2.4rem;
     font-feature-settings: 'palt';
     margin-bottom: 0;
+    @include max-screen($width-s){
+      box-sizing: border-box;
+      font-size: 1.8rem;
+      padding: 0 $bm-inner;
+      margin-bottom: $bm-inner;
+    }
   }
   &__ex{
     position: relative;
     z-index: 2;
+    padding: 0 $bm-inner;
     padding-top: $bm-outer*2;
+    @include max-screen($width-s){
+      padding: $bm-inner;
+      margin-left: $bm-inner;
+      margin-right: $bm-inner;
+      background-color: rgba(0,0,0,.5);
+    }
   }
   &__next{
     position: absolute;

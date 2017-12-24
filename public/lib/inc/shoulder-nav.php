@@ -1,5 +1,9 @@
 <nav class="shoulder-nav">
-  <div class="shoulder-nav__bg"></div>
+  <div class="shoulder-nav__bg">
+    <svg viewBox="0 0 10 10" class="shoulder-nav__svg">
+      <polygon points="10 0 0 0 0 10 10 0">
+    </svg>
+  </div>
   <div class="shoulder-nav__row">
     <nav class="shoulder-nav__lang lang-nav">
       <p class="lang-nav__label">LANGUAGE</p>

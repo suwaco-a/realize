@@ -80,10 +80,12 @@
 @import "common/_layout/__full.scss";
 @import "common/_layout/__column.scss";
 @import "common/_layout/__wrap.scss";
+@import "common/_layout/__diagonal-bg.scss";
 
 //ページ個別
 body.home{
-  //@import "page/_home/__main.scss";
+  @import "page/_home/__scroll-icon.scss";
   @import "page/_home/__home-conts.scss";
   @import "page/_home/__next.scss";
+  @import "page/_home/__bottom-links.scss";
 }

@@ -5,15 +5,15 @@ export default function () {
 
   //セレクターの数だけ実行
   for (let el of targets){
-    observerFn(el);
-  };
+    observerFn(el)
+  }
 
   //実行内容
   function observerFn(el){
 
     // オプションを指定
     const options = {
-      rootMargin: '-20%',　//root（通常はviewpoert）のmargin
+      rootMargin: '-10%',　//root（通常はviewpoert）のmargin
       //root: document.querySelector('#all'), // 判定要素(通常はviewpoert)指定
       //threshold: [0, 0.5, 1] //発火のタイミング(通常は、0=bttom/1=top)
     }
@@ -24,18 +24,18 @@ export default function () {
       let e = entry[0];
 
       if(e.isIntersecting == true){
-        //e.target.innerHTML = '入ってるよ（監視中）';
-        e.target.classList.add('js-inview');
+        e.target.style.zIndex = 2
+        e.target.classList.add('js-inview')
       }else{
-        //e.target.innerHTML = '出てるよ（監視中）';
+        e.target.style.zIndex = 1
         e.target.classList.remove('js-inview')
       }
 
     }, options);
 
     // 監視したい要素をobserve
-    observer.observe(el);
-  };
+    observer.observe(el)
+  }
 
 
 };

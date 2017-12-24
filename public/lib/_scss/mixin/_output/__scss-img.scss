@@ -126,6 +126,16 @@
 $compass-imagehelper-path-prefix: '../img/';
 
 $compass-imagehelper-imagesmap: (
+  'home/xxx.png': (
+    width: '600',
+    height: '315',
+    hash: '593202bfa14859544bbe54b7684936d3'
+  ),
+  'home/bg__dot.svg': (
+    width: '8',
+    height: '8',
+    hash: 'd157658e4340b32a0a1d07a119047c0b'
+  ),
   'dummy/bronze.png': (
     width: '1652',
     height: '500',
@@ -186,16 +196,6 @@ $compass-imagehelper-imagesmap: (
     height: '1000',
     hash: '93e43cb8b84cb55a3775f52632285df3'
   ),
-  'home/xxx.png': (
-    width: '600',
-    height: '315',
-    hash: '593202bfa14859544bbe54b7684936d3'
-  ),
-  'home/bg__dot.svg': (
-    width: '8',
-    height: '8',
-    hash: 'd157658e4340b32a0a1d07a119047c0b'
-  ),
   'icons/apple-touch-icon.png': (
     width: '152',
     height: '152',
@@ -226,6 +226,11 @@ $compass-imagehelper-imagesmap: (
     height: '630',
     hash: 'b04411eec9586077f9f1f4d142af56d4'
   ),
+  'common/diagonal-bg/bg.svg': (
+    width: '65',
+    height: '65',
+    hash: 'b4b038ba112e9f239ca1d3131a8931aa'
+  ),
   'common/footer/logo.png': (
     width: '132',
     height: '32',
@@ -245,5 +250,15 @@ $compass-imagehelper-imagesmap: (
     width: '258',
     height: '64',
     hash: 'ccba94f811b3ff7d74c47f5e86a46ca1'
+  ),
+  'common/scroll/icon.png': (
+    width: '46',
+    height: '91',
+    hash: '9388683001564d8ac57f1759deb983a4'
+  ),
+  'common/scroll/icon@2x.png': (
+    width: '92',
+    height: '182',
+    hash: 'b4aaf80ef188c3ea4b862084a58ac50f'
   ),
 );

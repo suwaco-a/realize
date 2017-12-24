@@ -144,17 +144,9 @@ popwin_config();
 
 //home
 import homeConts_config from './page/_home/__home-conts.js';
+import homeGnav_config from './page/_home/__gnav.js';
 if($('body.home').length){
   homeConts_config();
-  console.log('test');
+  homeGnav_config();
 }
 
-if($('body._etc').length){
-  mainV_config();
-};
-
-//PointerEventsのサンプル
-import pointerEvents_config from './page/_pointer-events/__config.js';
-if($('body._pointer-events').length){
-  pointerEvents_config();
-};
