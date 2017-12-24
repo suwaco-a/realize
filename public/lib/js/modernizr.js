@@ -1,6 +1,6 @@
 /*!
  * modernizr v3.5.0
- * Build https://modernizr.com/download?-MessageChannel-animation-canvas-capture-checked-contains-cors-csstransforms3d-flexbox-hidden-history-json-mutationobserver-opacity-performance-placeholder-pointerevents-search-sizes-srcset-svg-target-template-texttrackapi_track-time-touchevents-unicode-addtest-fnbind-printshiv-setclasses-testprop-dontmin
+ * Build https://modernizr.com/download?-MessageChannel-animation-canvas-capture-checked-contains-cors-csstransforms3d-flexbox-hidden-history-json-mutationobserver-opacity-performance-placeholder-search-sizes-srcset-svg-target-template-texttrackapi_track-time-touchevents-unicode-addtest-fnbind-printshiv-setclasses-testprop-dontmin
  *
  * Copyright (c)
  *  Faruk Ates
@@ -1966,44 +1966,6 @@ Detects support for the Navigation Timing API, for measuring browser and connect
 */
 
   Modernizr.addTest('performance', !!prefixed('performance', window));
-
-/*!
-{
-  "name": "DOM Pointer Events API",
-  "property": "pointerevents",
-  "tags": ["input"],
-  "authors": ["Stu Cox"],
-  "notes": [
-    {
-      "name": "W3C spec",
-      "href": "https://www.w3.org/TR/pointerevents/"
-    }
-  ],
-  "warnings": ["This property name now refers to W3C DOM PointerEvents: https://github.com/Modernizr/Modernizr/issues/548#issuecomment-12812099"],
-  "polyfills": ["handjs","pep"]
-}
-!*/
-/* DOC
-Detects support for the DOM Pointer Events API, which provides a unified event interface for pointing input devices, as implemented in IE10+.
-*/
-
-  // **Test name hijacked!**
-  // Now refers to W3C DOM PointerEvents spec rather than the CSS pointer-events property.
-  Modernizr.addTest('pointerevents', function() {
-    // Cannot use `.prefixed()` for events, so test each prefix
-    var bool = false,
-      i = domPrefixes.length;
-
-    // Don't forget un-prefixed...
-    bool = Modernizr.hasEvent('pointerdown');
-
-    while (i-- && !bool) {
-      if (hasEvent(domPrefixes[i] + 'pointerdown')) {
-        bool = true;
-      }
-    }
-    return bool;
-  });
 
 /*!
 {

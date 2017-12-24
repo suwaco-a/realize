@@ -1,0 +1,18 @@
+.l-diagonal-bg{
+  position: relative;
+  z-index: 3;
+  margin: 0 -1000px;
+  &__row{
+    position: relative;
+    width: 100vw;
+    height: 100vw;
+    margin: 0 auto;
+  }
+  &__svg{
+    width: 100vw;
+    height: 100vw;
+  }
+  &__item{
+    fill:#fff;
+  }
+}

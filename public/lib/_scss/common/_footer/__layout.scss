@@ -1,6 +1,8 @@
 .footer{
-	box-sizing: border-box;
+  position: relative;
+  box-sizing: border-box;
   background-color: $color-dark;
+  z-index: 2;
   &__row{
     @include wrap;
     display: flex;
@@ -14,7 +16,7 @@
       padding-top: $bm-inner;
       padding-bottom: $bm-inner;
     }
-	}
+  }
   &__flink{
     @include max-screen($width-m){
       display: flex;
@@ -25,13 +27,13 @@
 
   }
 
-	&__nav{
+  &__nav{
     max-width: 700px;
     @include max-screen($width-m){
       max-width: 100%;
     }
-	}
-	&__add{
+  }
+  &__add{
 
-	}
+  }
 }

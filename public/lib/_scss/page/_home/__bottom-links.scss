@@ -1,0 +1,31 @@
+.bottom-links{
+  margin-top: 50vh;
+  &__row{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 -$bm;
+    flex-wrap: wrap;
+    z-index: 2;
+  }
+  &__item{
+    box-sizing: border-box;
+    padding: $bm;
+    $flex-w:14%;
+    max-width:$flex-w;
+    flex: 0 0 $flex-w;
+    @include max-screen($width-m){
+      $flex-w:25%;
+      max-width:$flex-w;
+      flex: 0 0 $flex-w;
+    }
+    @include max-screen($width-s){
+      $flex-w:50%;
+      max-width:$flex-w;
+      flex: 0 0 $flex-w;
+    }
+  }
+  &__link{
+    background-color: red;
+  }
+}

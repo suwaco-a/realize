@@ -1,5 +1,6 @@
 .pan{
   @include wrap;
+  background-color: #fff;
 	&__row{
     box-sizing: border-box;
 		display: flex;

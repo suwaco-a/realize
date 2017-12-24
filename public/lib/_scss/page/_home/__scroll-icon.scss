@@ -1,0 +1,7 @@
+.scroll-icon{
+  @include bg-img(common/scroll/icon,png);
+  position: fixed;
+  z-index: 2;
+  bottom: -20px;
+  left: calc(50% - 10px);
+}
