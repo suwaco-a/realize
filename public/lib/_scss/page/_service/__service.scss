@@ -1,0 +1,74 @@
+/* ---- l-page-single ---- */
+
+.main{	background-image: url(../img/service/page_bg_mobility.jpg);	background-repeat: no-repeat;	background-size:cover; background-attachment: fixed;   padding-bottom: 0;}
+.main__conts{	background-color: #fff;    padding: 70px 25px;}
+
+.gnav__link{	color: #fff;}
+.main-header__ttl,
+.main-header__desc{	color: #fff;}
+.main__conts{	max-width: 1160px; margin-bottom: 48px;}
+.pan{    background-color: inherit;  color: #fff;}
+.pan a{  color: #fff;}
+.tags li{	display: inline-block;border: 1px solid #a1cf00; border-radius: 4px;	margin-right: 3px;}
+.tags li a{	color: #a1cf00;	text-decoration: none;	padding: 2px;	font-size: 14px;}
+
+header.services{padding-bottom: 50px;
+    .main-header__ttl{font-size: 18px;}
+    .main-header__ttl .service_ttl{ font-size: 30px; border-left: 1px solid #fff;    padding-left: 25px;    margin-left: 25px;    vertical-align:middle;}
+    .main-header__desc{margin-top: 30px; max-width: 680px;}
+}
+
+.u-ttl_l{text-transform:uppercase;}
+
+    
+
+/* ---- index ---- */
+
+section.index{
+    ul.page_navi{	text-align: center;}
+    ul.page_navi li{display: inline-block;	margin-right:40px;	width: 140px;	font-size: 20px;	font-weight: bold;	background: url(../img/service/line.png) no-repeat right bottom;	height: 43px;}
+    ul.page_navi li:last-child{margin-right: 0;border-left: 1px solid #bbb;	padding-left: 40px;}
+    ul.page_navi li a{text-decoration: none;}
+
+    @media screen and (max-width:800px) {
+        ul.page_navi{	display: none;}
+    }
+    
+    .u-ttl_l{	text-align: center;	}
+    .u-ttl_l span{	font-size: 16px;	font-weight: normal;	letter-spacing: normal;}
+    .col-area{	text-align: center;}
+    .img_col{	display: inline-block;	width: 340px;	margin:0 3px 30px 3px;	text-align: left;}
+    .img_col strong{	font-size: 20px;}
+
+} 
+/* ---- services ---- */
+div.services section{
+    padding-left: 65px;
+    
+    @media screen and (max-width:800px) {
+        padding-left: 0px;
+    }
+    .layout-box_l,.layaut-box_r{display: inline-block; vertical-align: top;}
+    .layout-box_l{    width: 520px;    margin-right:100px;
+        .img-box{margin-top: 40px;}
+    }
+    .layout-box_r{  width: 360px;
+        
+    }
+    
+    @media screen and (max-width:800px) {
+        .layout-box_l, .layout-box_r{margin: 0; width:auto;}
+    }
+    .u-ttl_l{    font-size: 22px;}
+    .u-ttl_l span{	font-size: 16px;	font-weight: normal;	letter-spacing: normal;}
+    
+    h3{margin: 40px 0;    font-size: 20px; color: #222;}
+    .img-box{    text-align: center;    overflow: hidden;}
+    .img-caption{width: 360px;font-size: 12px;    text-align: left;}
+    
+}
+/* ---- service_01 ---- */
+
+section.service_01{
+    /*ページの個別スタイル*/
+}

@@ -89,3 +89,8 @@ body.home{
   @import "page/_home/__next.scss";
   @import "page/_home/__bottom-links.scss";
 }
+body.service{
+    @import "page/_service/__service.scss";
+}body.company{
+    @import "page/_company/__company.scss";
+}
