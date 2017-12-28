@@ -183,7 +183,7 @@ body {
   font-feature-settings: "Kana";
   font-family: 'Roboto',Linotte, YuGothic, 'Yu Gothic', 游ゴシック体, 游ゴシック, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Roboto, メイリオ, Meiryo, 'ＭＳ Ｐゴシック', Osaka, 'MS PGothic', Arial, Helvetica, Verdana, sans-serif;
   line-height: 1.8;
-  color: #4a4d50; }
+  color: #222; }
 
 a {
   -webkit-tap-highlight-color: transparent;
@@ -2959,5 +2959,202 @@ body.home .bottom-links {
         flex: 0 0 50%; } }
   body.home .bottom-links__link {
     background-color: red; }
+
+body.service {
+  /* ---- l-page-single ---- */
+  /* ---- index ---- */
+  /* ---- services ---- */
+  /* ---- service_01 ---- */ }
+  body.service .main {
+    background-image: url(../img/service/page_bg_mobility.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 0; }
+  body.service .main__conts {
+    background-color: #fff;
+    padding: 70px 25px; }
+  body.service .gnav__link {
+    color: #fff; }
+  body.service .main-header__ttl,
+  body.service .main-header__desc {
+    color: #fff; }
+  body.service .main__conts {
+    max-width: 1160px;
+    margin-bottom: 48px; }
+  body.service .pan {
+    background-color: inherit;
+    color: #fff; }
+  body.service .pan a {
+    color: #fff; }
+  body.service .tags li {
+    display: inline-block;
+    border: 1px solid #a1cf00;
+    border-radius: 4px;
+    margin-right: 3px; }
+  body.service .tags li a {
+    color: #a1cf00;
+    text-decoration: none;
+    padding: 2px;
+    font-size: 14px; }
+  body.service header.services {
+    padding-bottom: 50px; }
+    body.service header.services .main-header__ttl {
+      font-size: 18px; }
+    body.service header.services .main-header__ttl .service_ttl {
+      font-size: 30px;
+      border-left: 1px solid #fff;
+      padding-left: 25px;
+      margin-left: 25px;
+      vertical-align: middle; }
+    body.service header.services .main-header__desc {
+      margin-top: 30px;
+      max-width: 680px; }
+  body.service .u-ttl_l {
+    text-transform: uppercase; }
+  body.service section.index ul.page_navi {
+    text-align: center; }
+  body.service section.index ul.page_navi li {
+    display: inline-block;
+    margin-right: 40px;
+    width: 140px;
+    font-size: 20px;
+    font-weight: bold;
+    background: url(../img/service/line.png) no-repeat right bottom;
+    height: 43px; }
+  body.service section.index ul.page_navi li:last-child {
+    margin-right: 0;
+    border-left: 1px solid #bbb;
+    padding-left: 40px; }
+  body.service section.index ul.page_navi li a {
+    text-decoration: none; }
+  @media screen and (max-width: 800px) {
+    body.service section.index ul.page_navi {
+      display: none; } }
+  body.service section.index .u-ttl_l {
+    text-align: center; }
+  body.service section.index .u-ttl_l span {
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: normal; }
+  body.service section.index .col-area {
+    text-align: center; }
+  body.service section.index .img_col {
+    display: inline-block;
+    width: 340px;
+    margin: 0 3px 30px 3px;
+    text-align: left; }
+  body.service section.index .img_col strong {
+    font-size: 20px; }
+  body.service div.services section {
+    padding-left: 65px; }
+    @media screen and (max-width: 800px) {
+      body.service div.services section {
+        padding-left: 0px; } }
+    body.service div.services section .layout-box_l, body.service div.services section .layaut-box_r {
+      display: inline-block;
+      vertical-align: top; }
+    body.service div.services section .layout-box_l {
+      width: 520px;
+      margin-right: 100px; }
+      body.service div.services section .layout-box_l .img-box {
+        margin-top: 40px; }
+    body.service div.services section .layout-box_r {
+      width: 360px; }
+    @media screen and (max-width: 800px) {
+      body.service div.services section .layout-box_l, body.service div.services section .layout-box_r {
+        margin: 0;
+        width: auto; } }
+    body.service div.services section .u-ttl_l {
+      font-size: 22px; }
+    body.service div.services section .u-ttl_l span {
+      font-size: 16px;
+      font-weight: normal;
+      letter-spacing: normal; }
+    body.service div.services section h3 {
+      margin: 40px 0;
+      font-size: 20px;
+      color: #222; }
+    body.service div.services section .img-box {
+      text-align: center;
+      overflow: hidden; }
+    body.service div.services section .img-caption {
+      width: 360px;
+      font-size: 12px;
+      text-align: left; }
+  body.service section.service_01 {
+    /*ページの個別スタイル*/ }
+
+body.company {
+  /* ---- l-page-single ---- */
+  /* ---- index ---- */ }
+  body.company .main {
+    background-image: url(../img/service/page_bg_mobility.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 0; }
+  body.company .main__conts {
+    background-color: #fff;
+    padding: 70px 25px; }
+  body.company .gnav__link {
+    color: #fff; }
+  body.company .main-header__ttl,
+  body.company .main-header__desc {
+    color: #fff; }
+  body.company .main__conts {
+    max-width: 1160px;
+    margin-bottom: 48px; }
+  body.company .pan {
+    background-color: inherit;
+    color: #fff; }
+  body.company .pan a {
+    color: #fff; }
+  body.company .tags li {
+    display: inline-block;
+    border: 1px solid #a1cf00;
+    border-radius: 4px;
+    margin-right: 3px; }
+  body.company .tags li a {
+    color: #a1cf00;
+    text-decoration: none;
+    padding: 2px;
+    font-size: 14px; }
+  body.company header.services {
+    padding-bottom: 50px; }
+    body.company header.services .main-header__ttl {
+      font-size: 18px; }
+    body.company header.services .main-header__ttl .service_ttl {
+      font-size: 30px;
+      border-left: 1px solid #fff;
+      padding-left: 25px;
+      margin-left: 25px;
+      vertical-align: middle; }
+    body.company header.services .main-header__desc {
+      margin-top: 30px;
+      max-width: 680px; }
+  body.company .u-ttl_l {
+    text-transform: uppercase; }
+  body.company section.index {
+    padding: 0 65px; }
+    @media screen and (max-width: 800px) {
+      body.company section.index {
+        padding: 0px; } }
+    body.company section.index dl {
+      border-bottom: 1px solid #d6d9da;
+      padding-bottom: 20px;
+      margin-top: 20px; }
+    body.company section.index dl:first-child {
+      margin-top: 0; }
+    body.company section.index dt, body.company section.index dd {
+      display: inline-block;
+      vertical-align: top; }
+    body.company section.index dt {
+      color: #666666;
+      width: 320px;
+      padding-right: 40px;
+      text-align: right; }
+    body.company section.index dd {
+      width: 610px; }
 
 /*# sourceMappingURL=styles.css.map */

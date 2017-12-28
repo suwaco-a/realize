@@ -36,7 +36,8 @@ body {
 	font-feature-settings: "Kana"; //opentypeの文字詰めを有効
 	@include gothic; //ゴシック体を利用
 	line-height: 1.8;
-	color:$color-dark-lighten;
+	//color:$color-dark-lighten;
+    color: #222;
 }
 
 //テキストリンク
