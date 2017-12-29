@@ -90,7 +90,11 @@ body.home{
   @import "page/_home/__bottom-links.scss";
 }
 body.service{
-    @import "page/_service/__service.scss";
+    @import "page/_service/__index.scss";
+    @import "page/_service/__sensing.scss";
+    @import "page/_service/__vr.scss";
+    @import "page/_service/__mobility.scss";
+    @import "page/_service/__solution.scss";
 }body.company{
-    @import "page/_company/__company.scss";
+    @import "page/_company/__index.scss";
 }

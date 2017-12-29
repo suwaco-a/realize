@@ -1,0 +1,19 @@
+/* ---- index ---- */
+&.company{
+  
+  .conts__item{
+    width: 720px;  margin:0 auto 0;
+    dl{    border-bottom: 1px solid #d6d9da;    padding-bottom:20px;    padding-left: $bm*10;  padding-right: $bm*10;  margin-top: 20px;}
+    dl:first-child{margin-top: 0;}
+    dt,dd{display: inline-block;    vertical-align: top}
+    dt{color: #666666;  font-size: 14px;  padding-right: 40px;    text-align: right;  width:18%;}
+    dd{  width: 74.1.5%;}
+    @include max-screen($width-m){
+      width: auto;
+      dt,dd{display: block;}
+      dt{text-align: left;  margin-bottom: $bm*3;}
+      dl{    padding-left: $bm*3;  padding-right:$bm*3;}
+    }
+  }
+  
+}

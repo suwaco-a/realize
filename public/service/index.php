@@ -1,5 +1,5 @@
 <?php
-$pageTtl = "SHOW CASE";
+$pageTtl = "SERVICE 事業内容";
 include ("../function.php");
 $metaTtl = $pageTtl."-".$siteName;
 $metaDesc = $siteDescription;
@@ -12,14 +12,13 @@ include($inc_path."/lib/inc/main-head.php");
 
 <header class="main__header main-header">
   <div class="main-header__row">
-    <h1 class="main-header__ttl"><?php echo $pageTtl; ?></h1>
-    <p class="main-header__desc">お客様事例</p>
+    <h1 class="main-header__ttl">SERVICE</h1>
+    <p class="main-header__desc">事業内容</p>
   </div>
 </header>
 
 <div class="main__conts conts">
   <section class="conts__item index">
-    <?php /*include ($inc_path."/service/sample-article.php");*/ ?>
 <div>
 <ul class="page_navi">
 	<li><a href="#sensing_ai">SENSING/AI</a></li>
@@ -32,9 +31,9 @@ include($inc_path."/lib/inc/main-head.php");
  <h2 id="sensing_ai" class="u-ttl_l">SENSING/AI<br><span>センシング／AI</span></h2>
   <div class="col-area">
 	  <div class="img_col">
-		<img src="https://placehold.jp/340x220.png" alt="">
+        <a href="sensing_01.php"><img src="https://placehold.jp/340x220.png" alt=""></a>
 		 <p>ダイハツ工業株式会社様 </p>
-		 <p><strong>らくぴた送迎</strong></p>
+		 <p><a href="sensing_01.php"><strong>らくぴた送迎</strong></a></p>
 		 <ul class="tags">
 		 	<li><a href="">タグワード</a></li>
 		 	<li><a href="">タグワード</a></li>
@@ -42,9 +41,9 @@ include($inc_path."/lib/inc/main-head.php");
 		 </ul>
 	  </div>
 	  <div class="img_col">
-		<img src="https://placehold.jp/340x220.png" alt="">
+        <a href="sensing_01.php"><img src="https://placehold.jp/340x220.png" alt=""></a>
 		 <p>ダイハツ工業株式会社様 </p>
-		 <p><strong>らくぴた送迎</strong></p>
+		 <p><a href="sensing_01.php"><strong>らくぴた送迎</strong></a></p>
 		 <ul class="tags">
 		 	<li><a href="">タグワード</a></li>
 		 	<li><a href="">タグワード</a></li>
@@ -52,9 +51,9 @@ include($inc_path."/lib/inc/main-head.php");
 		 </ul>
 	  </div>
 	  <div class="img_col">
-		<img src="https://placehold.jp/340x220.png" alt="">
+        <a href="sensing_01.php"><img src="https://placehold.jp/340x220.png" alt=""></a>
 		 <p>ダイハツ工業株式会社様 </p>
-		 <p><strong>らくぴた送迎</strong></p>
+		 <p><a href="sensing_01.php"><strong>らくぴた送迎</strong></a></p>
 		 <ul class="tags">
 		 	<li><a href="">タグワード</a></li>
 		 	<li><a href="">タグワード</a></li>
@@ -62,9 +61,9 @@ include($inc_path."/lib/inc/main-head.php");
 		 </ul>
 	  </div>
 	  <div class="img_col">
-		<img src="https://placehold.jp/340x220.png" alt="">
+        <a href="sensing_01.php"><img src="https://placehold.jp/340x220.png" alt=""></a>
 		 <p>ダイハツ工業株式会社様 </p>
-		 <p><strong>らくぴた送迎</strong></p>
+		 <p><a href="sensing_01.php"><strong>らくぴた送迎</strong></a></p>
 		 <ul class="tags">
 		 	<li><a href="">タグワード</a></li>
 		 	<li><a href="">タグワード</a></li>
@@ -72,9 +71,9 @@ include($inc_path."/lib/inc/main-head.php");
 		 </ul>
 	  </div>
 	  <div class="img_col">
-		<img src="https://placehold.jp/340x220.png" alt="">
+        <a href="sensing_01.php"><img src="https://placehold.jp/340x220.png" alt=""></a>
 		 <p>ダイハツ工業株式会社様 </p>
-		 <p><strong>らくぴた送迎</strong></p>
+		 <p><a href="sensing_01.php"><strong>らくぴた送迎</strong></a></p>
 		 <ul class="tags">
 		 	<li><a href="">タグワード</a></li>
 		 	<li><a href="">タグワード</a></li>
@@ -86,9 +85,9 @@ include($inc_path."/lib/inc/main-head.php");
   <h2 id="vr" class="u-ttl_l">VR<br><span>仮想現実</span></h2>
   <div class="col-area">
 	  <div class="img_col">
-		<img src="https://placehold.jp/340x220.png" alt="">
+		<a href="vr_01.php"><img src="https://placehold.jp/340x220.png" alt=""></a>
 		 <p>ダイハツ工業株式会社様 </p>
-		 <p><strong>らくぴた送迎</strong></p>
+		 <p><a href="vr_01.php"><strong>らくぴた送迎</strong></a></p>
 		 <ul class="tags">
 		 	<li><a href="">タグワード</a></li>
 		 	<li><a href="">タグワード</a></li>
@@ -96,9 +95,9 @@ include($inc_path."/lib/inc/main-head.php");
 		 </ul>
 	  </div>
 	  <div class="img_col">
-		<img src="https://placehold.jp/340x220.png" alt="">
+		<a href="vr_01.php"><img src="https://placehold.jp/340x220.png" alt=""></a>
 		 <p>ダイハツ工業株式会社様 </p>
-		 <p><strong>らくぴた送迎</strong></p>
+		 <p><a href="vr_01.php"><strong>らくぴた送迎</strong></a></p>
 		 <ul class="tags">
 		 	<li><a href="">タグワード</a></li>
 		 	<li><a href="">タグワード</a></li>
@@ -106,9 +105,51 @@ include($inc_path."/lib/inc/main-head.php");
 		 </ul>
 	  </div>
 	  <div class="img_col">
-		<img src="https://placehold.jp/340x220.png" alt="">
+		<a href="vr_01.php"><img src="https://placehold.jp/340x220.png" alt=""></a>
 		 <p>ダイハツ工業株式会社様 </p>
-		 <p><strong>らくぴた送迎</strong></p>
+		 <p><a href="vr_01.php"><strong>らくぴた送迎</strong></a></p>
+		 <ul class="tags">
+		 	<li><a href="">タグワード</a></li>
+		 	<li><a href="">タグワード</a></li>
+		 	<li><a href="">タグワード</a></li>
+		 </ul>
+	  </div>
+  </div>
+    
+  
+  
+  <h2 id="mobility" class="u-ttl_l">MOBILITY<br><span>仮想現実</span></h2>
+  <div class="col-area">
+	  <div class="img_col">
+		<a href="mobility_01.php"><img src="https://placehold.jp/340x220.png" alt=""></a>
+		 <p>ダイハツ工業株式会社様 </p>
+		 <p><a href="mobility_01.php"><strong>らくぴた送迎</strong></a></p>
+		 <ul class="tags">
+		 	<li><a href="">タグワード</a></li>
+		 	<li><a href="">タグワード</a></li>
+		 	<li><a href="">タグワード</a></li>
+		 </ul>
+	  </div>
+	  <div class="img_col">
+		<a href="mobility_01.php"><img src="https://placehold.jp/340x220.png" alt=""></a>
+		 <p>ダイハツ工業株式会社様 </p>
+		 <p><a href="mobility_01.php"><strong>らくぴた送迎</strong></a></p>
+		 <ul class="tags">
+		 	<li><a href="">タグワード</a></li>
+		 	<li><a href="">タグワード</a></li>
+		 	<li><a href="">タグワード</a></li>
+		 </ul>
+	  </div>
+  </div>
+    
+  
+  
+  <h2 id="solution" class="u-ttl_l">SOLUTION<br><span>仮想現実</span></h2>
+  <div class="col-area">
+	  <div class="img_col">
+		<a href="solution_01.php"><img src="https://placehold.jp/340x220.png" alt=""></a>
+		 <p>ダイハツ工業株式会社様 </p>
+		 <p><a href="solution_01.php"><strong>らくぴた送迎</strong></a></p>
 		 <ul class="tags">
 		 	<li><a href="">タグワード</a></li>
 		 	<li><a href="">タグワード</a></li>
@@ -121,8 +162,8 @@ include($inc_path."/lib/inc/main-head.php");
 </div>
 
 <?php
-$panAry[] = array("/service" ,"事業内容");
-$panAry[] = array("/dummyURL1" ,"dammy2");
+//$panAry[] = array("/service" ,"事業内容");
+//$panAry[] = array("/dummyURL1" ,"dammy2");
 include($inc_path."/lib/inc/pan.php");
 include($inc_path."/lib/inc/main-foot.php");
 include($inc_path."/lib/inc/pagetop.php");

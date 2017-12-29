@@ -1,8 +1,13 @@
 body.l-page-single .main{
-  $conts-width:820px;
+  $conts-width:1160px;
   $side-width:'300px';
   $space:$bm-outer;
-
+  background-image: url(../img/common/page/page_bg_common.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center top;
+  padding-bottom: 0;
   &__row{
     display: flex;
     flex-wrap: wrap;
@@ -12,12 +17,33 @@ body.l-page-single .main{
     box-sizing: border-box;
     max-width: $conts-width;
     flex: 1 1 calc(100% - #{$side-width} - #{$space});
-    padding: $bm-inner;
-    border: 1px solid $color-light;
+    //padding: $bm-inner;
+    padding: 70px 0;
+    margin-bottom: 70px;
+    background: #fff;
     @include max-screen($width-m){
       max-width: 100%;
       flex: 0 0 100%;
       margin-bottom: $bm-inner;
+      padding: $bm-inner;
     }
   }
 }
+
+body.l-page-single{
+  .gnav__link{color: #fff;}
+  .main__header{
+    padding: 73px 0 100px;
+    @include max-screen($width-m){
+      padding: 50px 0;
+    }
+  }
+    
+  .main-header__ttl,
+  .main-header__desc{	color: #fff;}
+  
+  .main-header__desc{ margin: 0;}
+  .pan{    background-color: inherit;  color: #fff;}
+  .pan a{  color: #fff;}
+  
+} 

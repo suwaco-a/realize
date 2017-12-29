@@ -18,24 +18,24 @@ include($inc_path."/lib/inc/main-head.php");
 </header>
 
 <div class="main__conts conts">
-  <section class="conts__item index">
+  <section class="conts__item">
   
   <dl>
       <dt>社名</dt>
-      <dd>リアライズ・モバイル・コミュニケーションズ株式会社
+      <dd>リアライズ・モバイル・コミュニケーションズ株式会社<br>
 Realize Mobile Communications Corp.</dd>
   </dl>
   <dl>
       <dt>事業内容</dt>
-      <dd>モバイルソリューションの企画、設計、運用
-モバイルコンテンツの企画、制作、配信
-モバイルビジネスに関するアウトソーシング
-モバイルコマース事業
+      <dd>モバイルソリューションの企画、設計、運用<br>
+モバイルコンテンツの企画、制作、配信<br>
+モバイルビジネスに関するアウトソーシング<br>
+モバイルコマース事業<br>
 モバイルビジネスに関するコンサルティング</dd>
   </dl>
   <dl>
       <dt>所在地</dt>
-      <dd>〒106-0032 東京都港区六本木2-4-5 6F
+      <dd>〒106-0032 東京都港区六本木2-4-5 6F<br>
 事業所案内</dd>
   </dl>
   <dl>
