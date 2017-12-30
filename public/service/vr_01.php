@@ -18,11 +18,11 @@ include($inc_path."/lib/inc/main-head.php");
   </div>
 </header>
 
-<div class="main__conts conts services vr vr_01">
+<div class="main__conts conts services">
   <section class="conts__item">
     <div class="layout-box_l">
          <h2 class="u-ttl_l">BACKGROUND<br><span>背景／課題</span></h2>
-         <h3 class="u-ttl-m">小見出しもあるよ</h3>
+         <h3 class="u-ttl_m">小見出しもあるよ</h3>
         <p>ダイハツとしての中小法人向け営業戦略について再検討を行うフェーズで参画し、その中で顧客課題を解決するサービス提供、という軸を据えつつ取り組むことを提案。<br>
 最初の対象市場を介護事業者向けと設定し、様々なヒアリングの中で送迎計画の立案に問題を抱えていることが課題として抽出されたため、計画を自動作成できるシステムを開発することになった。
 </p>

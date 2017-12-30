@@ -19,13 +19,13 @@ include($inc_path."/lib/inc/main-head.php");
 
 <div class="main__conts conts">
   <section class="conts__item index">
-<div>
-<ul class="page_navi">
-	<li><a href="#sensing_ai">SENSING/AI</a></li>
-	<li><a href="#vr">VR</a></li>
-	<li><a href="#mobility">Mobility</a></li>
-	<li><a href="#solution">Solution</a></li>
-</ul>
+<div class="page_navi">
+  <ul>
+      <li><a href="#sensing_ai" data-scroll>SENSING/AI</a></li>
+      <li><a href="#vr"  data-scroll>VR</a></li>
+      <li><a href="#mobility"  data-scroll>Mobility</a></li>
+      <li><a href="#solution"  data-scroll>Solution</a></li>
+  </ul>
 </div>
 
  <h2 id="sensing_ai" class="u-ttl_l">SENSING/AI<br><span>センシング／AI</span></h2>

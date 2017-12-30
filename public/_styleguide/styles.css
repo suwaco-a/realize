@@ -6,7 +6,7 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 @import 'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i';
-@import 'https://fonts.googleapis.com/css?family=Roboto:400,400i';
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i';
 html,
 body,
 div,
@@ -1733,7 +1733,8 @@ compile: false
   font-size: 3rem;
   color: #333;
   text-transform: uppercase;
-  letter-spacing: 0.25em; }
+  letter-spacing: 0.25em;
+  font-weight: 700; }
   .u-ttl_l:first-child {
     margin-top: 0; }
   .u-ttl_l + P {
@@ -2513,6 +2514,13 @@ body.l-page-single .main {
         margin-bottom: 24px;
         padding: 24px; } }
 
+body.l-page-single a {
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+
+body.l-page-single a:hover {
+  color: #a1cf00; }
+
 body.l-page-single .gnav__link {
   color: #fff; }
 
@@ -3000,23 +3008,32 @@ body.service {
   /* ---- vr ---- */
   /* ---- mobility ---- */
   /* ---- solution ---- */ }
-  body.service section.index ul.page_navi {
-    text-align: center; }
-  body.service section.index ul.page_navi li {
-    display: inline-block;
-    margin-right: 40px;
-    width: 140px;
-    font-size: 20px;
-    font-weight: 500;
-    background: url(../img/service/line.png) no-repeat right bottom;
-    height: 43px;
-    letter-spacing: 0.12em; }
-  body.service section.index ul.page_navi li:last-child {
-    margin-right: 0;
-    border-left: 1px solid #bbb;
-    padding-left: 40px; }
+  body.service section.index .page_navi {
+    margin-bottom: 20px; }
+    body.service section.index .page_navi ul {
+      text-align: center;
+      letter-spacing: -4px; }
+    body.service section.index .page_navi li {
+      display: inline-block;
+      letter-spacing: normal;
+      margin-right: 40px;
+      width: 140px;
+      font-size: 20px;
+      height: 40px;
+      letter-spacing: 0.12em;
+      line-height: 1; }
+    body.service section.index .page_navi li:last-child {
+      margin-right: 0;
+      border-left: 1px solid #bbb;
+      padding-left: 40px; }
+    body.service section.index .page_navi li a {
+      display: block;
+      width: 140px;
+      padding-bottom: 19px;
+      background: url(../img/service/line.png) no-repeat right bottom;
+      font-weight: 700; }
   @media screen and (max-width: 970px) {
-    body.service section.index ul.page_navi {
+    body.service section.index .page_navi {
       display: none; } }
   body.service section.index .tags li {
     display: inline-block;
@@ -3038,7 +3055,9 @@ body.service {
     padding-top: 80px;
     margin-left: 40px;
     margin-right: 40px;
-    border-top: 1px solid #bbb; }
+    border-top: 1px solid #bbb;
+    line-height: 1;
+    font-size: 26px; }
     body.service section.index .u-ttl_l:first-of-type {
       border: none; }
   body.service section.index .u-ttl_l span {
@@ -3047,12 +3066,20 @@ body.service {
     letter-spacing: normal; }
   body.service section.index .col-area {
     text-align: center;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    letter-spacing: -4px; }
   body.service section.index .img_col {
     display: inline-block;
     width: 340px;
     margin: 0 15px 35px 15px;
-    text-align: left; }
+    text-align: left;
+    letter-spacing: normal; }
+  body.service section.index .img_col a img:hover {
+    opacity: 0.5;
+    -webkit-transition: all .5s;
+    transition: all .5s; }
+  body.service section.index .img_col p {
+    font-size: 14px; }
   body.service section.index .img_col p:first-of-type {
     margin: 20px 0 0 0;
     line-height: 1; }
@@ -3141,12 +3168,18 @@ body.service {
       body.service div.services section .img-box img {
         max-width: 100%; } }
     body.service div.services section .u-ttl_l {
-      font-size: 22px; }
+      font-size: 22px;
+      margin-bottom: 36px; }
     body.service div.services section .u-ttl_l span {
       font-size: 16px;
       font-weight: normal;
       letter-spacing: normal;
       color: #000; }
+    body.service div.services section .u-ttl_m {
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 36px;
+      padding-bottom: 0; }
   body.service div.services {
     padding-bottom: 0; }
     body.service div.services .link_prev a {
@@ -3154,6 +3187,9 @@ body.service {
       background: #f0f0f0;
       text-align: center;
       padding: 20px; }
+      body.service div.services .link_prev a:hover {
+        background: #a1cf00;
+        color: #fff; }
   @media screen and (max-width: 970px) {
     body.service div.services {
       padding-right: 0;
@@ -3173,37 +3209,37 @@ body.service {
 
 body.company {
   /* ---- index ---- */ }
-  body.company.company .conts__item {
+  body.company .conts__item {
     width: 720px;
     margin: 0 auto 0; }
-    body.company.company .conts__item dl {
+    body.company .conts__item dl {
       border-bottom: 1px solid #d6d9da;
       padding-bottom: 20px;
       padding-left: 80px;
       padding-right: 80px;
       margin-top: 20px; }
-    body.company.company .conts__item dl:first-child {
+    body.company .conts__item dl:first-child {
       margin-top: 0; }
-    body.company.company .conts__item dt, body.company.company .conts__item dd {
+    body.company .conts__item dt, body.company .conts__item dd {
       display: inline-block;
       vertical-align: top; }
-    body.company.company .conts__item dt {
+    body.company .conts__item dt {
       color: #666666;
       font-size: 14px;
       padding-right: 40px;
       text-align: right;
       width: 18%; }
-    body.company.company .conts__item dd {
+    body.company .conts__item dd {
       width: 74.1 0.5%; }
     @media screen and (max-width: 970px) {
-      body.company.company .conts__item {
+      body.company .conts__item {
         width: auto; }
-        body.company.company .conts__item dt, body.company.company .conts__item dd {
+        body.company .conts__item dt, body.company .conts__item dd {
           display: block; }
-        body.company.company .conts__item dt {
+        body.company .conts__item dt {
           text-align: left;
           margin-bottom: 24px; }
-        body.company.company .conts__item dl {
+        body.company .conts__item dl {
           padding-left: 24px;
           padding-right: 24px; } }
 

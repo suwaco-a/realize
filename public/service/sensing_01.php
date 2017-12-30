@@ -18,7 +18,7 @@ include($inc_path."/lib/inc/main-head.php");
   </div>
 </header>
 
-<div class="main__conts conts services sensing sensing_01">
+<div class="main__conts conts services">
   <section class="conts__item">
     <div class="layout-box_l">
          <h2 class="u-ttl_l">BACKGROUND<br><span>背景／課題</span></h2>

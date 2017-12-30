@@ -31,6 +31,8 @@ body.l-page-single .main{
 }
 
 body.l-page-single{
+  a{transition: all .5s;}
+  a:hover{  color: #a1cf00;}
   .gnav__link{color: #fff;}
   .main__header{
     padding: 73px 0 100px;
