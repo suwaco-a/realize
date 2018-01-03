@@ -50,7 +50,7 @@ header.services{padding-bottom: 50px;
   
   @include max-screen($width-m){
     .main-header__ttl .service_ttl{  display: block;  border:none;  padding: 0;  margin: 0;  padding: $bm*2 0 $bm*3;}
-    .main-header__desc{text-align: left;  padding-left:$bm*8;padding-right: $bm*8; line-height: 1.8; }
+    .main-header__desc{text-align: left;  line-height: 1.8; }
   }
 }
 

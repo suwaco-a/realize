@@ -501,7 +501,7 @@ html, body {
     text-align: center;
     text-decoration: none;
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 1;
     color: #4d4d4d;
     -webkit-transition: all .5s;
@@ -3122,8 +3122,6 @@ body.service {
         padding: 16px 0 24px; }
       body.service header.services .main-header__desc {
         text-align: left;
-        padding-left: 64px;
-        padding-right: 64px;
         line-height: 1.8; } }
   body.service div.services section {
     text-align: center;
