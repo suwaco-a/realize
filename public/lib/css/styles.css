@@ -3043,12 +3043,18 @@ body.service {
     margin-bottom: 5px;
     line-height: 1;
     padding: 5px; }
+    body.service section.index .tags li:hover {
+      border: 1px solid #9aea00;
+      -webkit-transition: all .5s;
+      transition: all .5s; }
   body.service section.index .tags li:last-child {
     margin-right: 0; }
   body.service section.index .tags li a {
     color: #a1cf00;
     padding: 2px;
     font-size: 14px; }
+    body.service section.index .tags li a:hover {
+      color: #9aea00; }
   body.service section.index .u-ttl_l {
     text-align: center;
     margin-top: 0;

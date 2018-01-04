@@ -22,9 +22,9 @@ include($inc_path."/lib/inc/main-head.php");
 <div class="page_navi">
   <ul>
       <li><a href="#sensing_ai" data-scroll>SENSING/AI</a></li>
-      <li><a href="#vr"  data-scroll>VR</a></li>
-      <li><a href="#mobility"  data-scroll>Mobility</a></li>
-      <li><a href="#solution"  data-scroll>Solution</a></li>
+      <li><a href="#vr" data-scroll>VR</a></li>
+      <li><a href="#mobility" data-scroll>Mobility</a></li>
+      <li><a href="#solution" data-scroll>Solution</a></li>
   </ul>
 </div>
 

@@ -12,9 +12,11 @@ section.index{
   @media screen and (max-width:$width-m) {
       .page_navi{	display: none;}
   }
-  .tags li{	display: inline-block;border: 1px solid #a1cf00; border-radius: 4px;	margin-right: 3px;  margin-bottom: 5px; line-height: 1;  padding: 5px;}
+  .tags li{	display: inline-block;border: 1px solid #a1cf00; border-radius: 4px;	margin-right: 3px;  margin-bottom: 5px; line-height: 1;  padding: 5px;
+      &:hover{border: 1px solid #9aea00;transition: all .5s;}}
   .tags li:last-child{  margin-right: 0;}
-  .tags li a{	color: #a1cf00;	padding: 2px;	font-size: 14px; }
+  .tags li a{	color: #a1cf00;	padding: 2px;	font-size: 14px; 
+      &:hover{color: #9aea00;}}
 
   .u-ttl_l{	text-align: center; margin-top: 0;  padding-top: 80px; margin-left: 40px; margin-right: 40px;  border-top: 1px solid #bbb;  line-height: 1;  font-size: 26px;
     &:first-of-type{ border:none;}
